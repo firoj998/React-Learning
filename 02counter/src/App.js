@@ -1,28 +1,26 @@
 import {useState} from 'react'
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
-  //let counter = 15;
-let [counter,setCounter ] =  useState(15)
- const addValue = ()=>{
-  if(counter<20)
-  {
- 
-counter = counter+1;
-  }
-setCounter(counter)
-// console.log("addValue clicked",counter);
+  let [counter, setCounter]  = useState(15)
+
+  //let counter = 15
+
+  const addValue = () => {
+    // counter = counter + 1
+    setCounter(counter+1)
+     setCounter(prevCounter => prevCounter + 1)
+     setCounter(prevCounter => prevCounter + 1 )
+     setCounter(prevCounter => prevCounter + 1)
+     setCounter(prevCounter => prevCounter + 1)
+    
   }
 
-  const removeValue = ()=>{
-   if(counter>0){
-    counter = counter-1;
-  
-   }
-    setCounter(counter)
-    // console.log("addValue clicked",counter);
+  const removeValue = () => {
+    setCounter(counter - 1)
   }
+  
   return (
     <>
       <h1>Chai aur react</h1>
@@ -37,7 +35,6 @@ setCounter(counter)
       >remove value {counter}</button>
       <p>footer: {counter}</p>
     </>
-  );
+  )
 }
-
 export default App;
