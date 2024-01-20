@@ -5,14 +5,14 @@ import Contact from './Contact'
 
 function App() {
   // const [count, setCount] = useState(0)
-  const [name, setName]=useState('Firoj');
+  const [name, setName]=useState('Amaan');
 
   return (
     <>
       <h1>Hello World!</h1>
-      <ClassComponent name = {name} />
+      {/* <ClassComponent name = {name} /> */}
       <button onClick={()=>{setName("Hassan")}}>Update props</button>
-      {/* <Contact /> */}
+      <Contact name = {name} />
     </>
   )
 }

@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
 
-function Contact(){
+function Contact(props){
     const [name,setName] = useState("Firoj");
     const [age,setAge] = useState(25);
 
  useEffect(()=>{
     console.warn('Hello from Hook')
-},[name]);
+    console.log("props",props.name);
+},[]);
+
+useEffect(()=>{
+   console.log("props in update state",props.name);
+},[props.name]);
 
     let data = 'functional component  ';
     return(
