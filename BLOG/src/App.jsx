@@ -9,10 +9,10 @@ function App() {
 
   return (
     <>
-      <h1>Hello World!</h1>
+      {/* <h1>Hello World!</h1> */}
       {/* <ClassComponent name = {name} /> */}
-      <button onClick={()=>{setName("Hassan")}}>Update props</button>
-      <Contact name = {name} />
+      {/* <button onClick={()=>{setName("Hassan")}}>Update props</button> */}
+      <Contact/>
     </>
   )
 }
