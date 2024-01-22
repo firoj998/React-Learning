@@ -3,6 +3,7 @@ import './App.css'
 import ClassComponent from './ClassComponent'
 import Contact from './Contact'
 import Users from './Users'
+import CreateUser from './CreateUser'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,7 +15,9 @@ function App() {
       {/* <ClassComponent name = {name} /> */}
       {/* <button onClick={()=>{setName("Hassan")}}>Update props</button> */}
       {/* <Contact/> */}
-      <Users />
+      {/* <Users /> */}
+
+      <CreateUser />
     </>
   )
 }
